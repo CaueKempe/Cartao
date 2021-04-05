@@ -1,0 +1,108 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+html {
+    
+    width: 100%;
+    height: 100%;
+    
+}
+
+body {
+    background-image: url('JPG/jooj.jpg');
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+}
+
+.cartao{
+    background-color: rgba(15, 15, 138, 0.3);
+    box-shadow: 1px 1px 6px 1px #000;
+    width: 500px;
+    height: 500px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    right: 0px;
+    top: 50px;
+    bottom: 0px;
+
+}
+.cx1{
+    margin: 0px auto;
+    position: relative;
+}
+.cx1 img{
+    max-width: 90%;
+
+}
+.cx1 .nameP{
+    position: relative;
+    top: 40px;
+    right: 100px;
+
+}
+.cx1 .fotoP{
+    width: 50%;
+    position: relative;
+    bottom: 150px;
+    right: -350px;
+}
+.contactC{
+    display: flex;
+    flex-direction: column;
+    z-index: 1000;
+    width: 100px;
+    height: auto;
+    position: relative;
+    top: -250px;
+    left: 20px;
+}
+.contactC img{
+    max-width: 90px;
+}
+.fundoM{
+    max-width: 80%;
+    height: auto;
+    max-height: 60%;
+    
+    position: absolute;
+    left: 20%;
+    top: 20%;
+}
+
+@media screen and (max-width: 1024px){
+    body{
+        background-color: greenyellow;
+    }
+}
+
+@media screen and (max-width: 800px){
+    body{
+        background-color:hotpink;
+    }
+    .contactC{
+        top: -180px;
+        left: 0px;
+
+    }
+    .cx1 .nameP{
+        width: 100% ;
+        top: 70px;
+        right: 100px; 
+    }
+    .cx1 .fotoP{
+        width: 70%;
+        bottom: 120px;
+        right: -170px;
+    }
+    .cartao{
+        width: 300px;
+
+    }
+}
